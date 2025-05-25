@@ -27,6 +27,22 @@ const commands = [
       },
     ],
   },
+  {
+    name: "end",
+    description: "학습 세션을 종료합니다",
+  },
+  {
+    name: "answer",
+    description: "학습 내용 확인 질문에 답변합니다",
+    options: [
+      {
+        name: "answer",
+        description: "답변 내용",
+        type: 3, // STRING
+        required: true,
+      },
+    ],
+  },
 ];
 
 if (!process.env.DISCORD_TOKEN) {

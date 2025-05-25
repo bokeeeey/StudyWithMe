@@ -1,0 +1,88 @@
+MongoDB connected successfully
+Logged in as StudyWithMe#1797!
+(node:30022) Warning: Supplying "ephemeral" for interaction response options is deprecated. Utilize flags instead.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error processing answer: Error: Study session or question not found
+    at /Users/boky/Desktop/develop/front/06.study-with-me/src/services/studySession.ts:47:11
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/boky/Desktop/develop/front/06.study-with-me/src/services/studySession.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+Error processing answer: Error: Study session or question not found
+    at /Users/boky/Desktop/develop/front/06.study-with-me/src/services/studySession.ts:47:11
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/boky/Desktop/develop/front/06.study-with-me/src/services/studySession.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+Error processing answer: Error: Study session or question not found
+    at /Users/boky/Desktop/develop/front/06.study-with-me/src/services/studySession.ts:47:11
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/boky/Desktop/develop/front/06.study-with-me/src/services/studySession.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+Error generating question: AuthenticationError: 401 Incorrect API key provided: sk-ant-a************************************************************************************************3gAA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at Function.generate (/Users/boky/Desktop/develop/front/06.study-with-me/node_modules/openai/src/error.ts:76:14)
+    at OpenAI.makeStatusError (/Users/boky/Desktop/develop/front/06.study-with-me/node_modules/openai/src/core.ts:462:21)
+    at OpenAI.makeRequest (/Users/boky/Desktop/develop/front/06.study-with-me/node_modules/openai/src/core.ts:526:24)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  status: 401,
+  headers: {
+    'alt-svc': 'h3=":443"; ma=86400',
+    'cf-cache-status': 'DYNAMIC',
+    'cf-ray': '9456326bbb5030af-ICN',
+    connection: 'keep-alive',
+    'content-length': '358',
+    'content-type': 'application/json; charset=utf-8',
+    date: 'Sun, 25 May 2025 15:51:55 GMT',
+    server: 'cloudflare',
+    'set-cookie': '__cf_bm=fz.b_MQiHBHsUfi9gNwaeNIL9TIdDXk5t70OUj2jxpk-1748188315-1.0.1.1-xEoEQf2PVP6CfjV7X_GMaabyQX7LfuKZLRD8I6I4nWnTjkdksCJ5eLVR.Tx8xaYEmGQZWYQPSm1_kxQi.XnKQr3GzGyqjLxMVcYPYbHZ578; path=/; expires=Sun, 25-May-25 16:21:55 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=8FObLeHiAkLNswO9qREGYDYxxRvHbqcrSQDR8GFdoVw-1748188315737-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+    vary: 'Origin',
+    'x-content-type-options': 'nosniff',
+    'x-request-id': 'req_b20c08402044e5ab2b15511f37edc40f'
+  },
+  request_id: 'req_b20c08402044e5ab2b15511f37edc40f',
+  error: {
+    message: 'Incorrect API key provided: sk-ant-a************************************************************************************************3gAA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  },
+  code: 'invalid_api_key',
+  param: null,
+  type: 'invalid_request_error'
+}
+Error ending session: AuthenticationError: 401 Incorrect API key provided: sk-ant-a************************************************************************************************3gAA. You can find your API key at https://platform.openai.com/account/api-keys.
+    at Function.generate (/Users/boky/Desktop/develop/front/06.study-with-me/node_modules/openai/src/error.ts:76:14)
+    at OpenAI.makeStatusError (/Users/boky/Desktop/develop/front/06.study-with-me/node_modules/openai/src/core.ts:462:21)
+    at OpenAI.makeRequest (/Users/boky/Desktop/develop/front/06.study-with-me/node_modules/openai/src/core.ts:526:24)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  status: 401,
+  headers: {
+    'alt-svc': 'h3=":443"; ma=86400',
+    'cf-cache-status': 'DYNAMIC',
+    'cf-ray': '9456326bbb5030af-ICN',
+    connection: 'keep-alive',
+    'content-length': '358',
+    'content-type': 'application/json; charset=utf-8',
+    date: 'Sun, 25 May 2025 15:51:55 GMT',
+    server: 'cloudflare',
+    'set-cookie': '__cf_bm=fz.b_MQiHBHsUfi9gNwaeNIL9TIdDXk5t70OUj2jxpk-1748188315-1.0.1.1-xEoEQf2PVP6CfjV7X_GMaabyQX7LfuKZLRD8I6I4nWnTjkdksCJ5eLVR.Tx8xaYEmGQZWYQPSm1_kxQi.XnKQr3GzGyqjLxMVcYPYbHZ578; path=/; expires=Sun, 25-May-25 16:21:55 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=8FObLeHiAkLNswO9qREGYDYxxRvHbqcrSQDR8GFdoVw-1748188315737-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+    vary: 'Origin',
+    'x-content-type-options': 'nosniff',
+    'x-request-id': 'req_b20c08402044e5ab2b15511f37edc40f'
+  },
+  request_id: 'req_b20c08402044e5ab2b15511f37edc40f',
+  error: {
+    message: 'Incorrect API key provided: sk-ant-a************************************************************************************************3gAA. You can find your API key at https://platform.openai.com/account/api-keys.',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'invalid_api_key'
+  },
+  code: 'invalid_api_key',
+  param: null,
+  type: 'invalid_request_error'
+}
+Error processing answer: Error: Study session or question not found
+    at /Users/boky/Desktop/develop/front/06.study-with-me/src/services/studySession.ts:47:11
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/boky/Desktop/develop/front/06.study-with-me/src/services/studySession.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
