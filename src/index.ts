@@ -3,9 +3,13 @@ import { config } from "dotenv";
 import { resolve } from "path";
 import { handleReady } from "./events/ready";
 import { handleInteractionCreate } from "./events/interactionCreate";
+import connectDB from "./config/database";
 
-// .env.local 파일을 명시적으로 로드
+// Load environment variables
 config({ path: resolve(__dirname, "../.env.local") });
+
+// Connect to MongoDB
+connectDB().catch(console.error);
 
 // Create Discord client
 const client = new Client({

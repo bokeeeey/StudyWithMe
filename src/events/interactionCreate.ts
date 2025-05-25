@@ -1,5 +1,9 @@
 import { Interaction } from "discord.js";
-import { handleStudyCommand } from "../commands/study";
+import {
+  handleStudyCommand,
+  handleEndCommand,
+  handleAnswerCommand,
+} from "../commands/study";
 
 export const handleInteractionCreate = async (interaction: Interaction) => {
   if (!interaction.isChatInputCommand()) return;
@@ -8,6 +12,12 @@ export const handleInteractionCreate = async (interaction: Interaction) => {
     switch (interaction.commandName) {
       case "study":
         await handleStudyCommand(interaction);
+        break;
+      case "end":
+        await handleEndCommand(interaction);
+        break;
+      case "answer":
+        await handleAnswerCommand(interaction);
         break;
       default:
         await interaction.reply({
